@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Building...') {
             steps {
-                sh "MAVEN_SKIP_RC=true JAVA_HOME=/Disk1/jdks/jdk-18.0.2.1 mvn clean -DskipTests install"
+                sh "MAVEN_SKIP_RC=true JAVA_HOME=/Disk1/jdks/jdk-18.0.2.1 mvn clean -DskipTests install deploy"
             }
         }
     }
